@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Assignment #: InClass 03
+File Name: Pflug_InClass03 - activity_registration.xml
+Full Name: Kristin Pflug
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/reg_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/reg_name_label"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/reg_name_textbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/reg_name_hint"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toEndOf="@+id/reg_name_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reg_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/reg_email_label"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_name_label" />
+
+    <EditText
+        android:id="@+id/reg_email_textbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/reg_email_hint"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toEndOf="@+id/reg_email_label"
+        app:layout_constraintTop_toBottomOf="@+id/reg_name_textbox" />
+
+    <TextView
+        android:id="@+id/reg_id_label"
+        android:layout_width="36dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/reg_id_label"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_email_label" />
+
+    <EditText
+        android:id="@+id/reg_id_textbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/reg_id_hint"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toEndOf="@+id/reg_id_label"
+        app:layout_constraintTop_toBottomOf="@+id/reg_email_textbox" />
+
+    <TextView
+        android:id="@+id/reg_dept_label"
+        android:layout_width="46dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/reg_dept_label_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/reg_dept_select_button"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_id_label" />
+
+    <TextView
+        android:id="@+id/reg_dept_text"
+        android:layout_width="200dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="34dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/reg_dept_label"
+        app:layout_constraintTop_toBottomOf="@+id/reg_id_textbox" />
+
+    <Button
+        android:id="@+id/reg_dept_select_button"
+        android:layout_width="84dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/reg_dept_select_button_label"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_id_textbox" />
+
+    <Button
+        android:id="@+id/reg_submit_button"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/reg_submit_button_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_dept_text"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

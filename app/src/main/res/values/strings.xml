@@ -1,0 +1,31 @@
+<!--
+Assignment #: InClass 03
+File Name: Pflug_InClass03 - strings.xml
+Full Name: Kristin Pflug
+-->
+
+<resources>
+    <string name="app_name">Pflug_InClass03</string>
+    <string name="main_welcome_text">Welcome !!</string>
+    <string name="main_register_button_label">Register</string>
+    <string name="reg_name_label">Name: </string>
+    <string name="reg_name_hint">Enter Name</string>
+    <string name="reg_email_label">Email: </string>
+    <string name="reg_email_hint">Enter Email</string>
+    <string name="reg_id_label">ID: </string>
+    <string name="reg_id_hint">Enter ID</string>
+    <string name="reg_dept_label_text">Dept: </string>
+    <string name="reg_dept_select_button_label">Select</string>
+    <string name="reg_submit_button_label">Submit</string>
+    <string name="dept_comp_sci_radio">Computer Science</string>
+    <string name="dept_software_info_sys_radio">Software Info. Systems</string>
+    <string name="dept_bioinformatics_radio">Bio Informatics</string>
+    <string name="dept_data_science_radio">Data Science</string>
+    <string name="dept_cancel_button_label">Cancel</string>
+    <string name="dept_submit_button_label">Submit</string>
+    <string name="profile_name_label">Name: </string>
+    <string name="number_format_exception_error_text">Please enter a valid number for the ID field.</string>
+    <string name="empty_field_error_text">Please enter a valid name and email address.</string>
+    <string name="empty_department_error_text">Please choose a department.</string>
+    <string name="no_department_selected_error_text">Please select a department from the list.</string>
+</resources>
